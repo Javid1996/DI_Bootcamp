@@ -4,6 +4,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
+
+
+
+
+
 body{
     background-repeat: no-repeat;
           background-attachment: fixed; 
@@ -57,8 +62,9 @@ main{
 }
 h1{
     color:orange;
-     font: bold large;
+     font: bold ;
      font-size: 100px;
+     width: 100%;
 }
 
 main p{
@@ -69,7 +75,7 @@ main p{
 }
 
 .foot{
-    position: absolute;
+    position: fixed;
     background-color:black ;
     margin-top:10px;
     height:60px;
@@ -80,4 +86,66 @@ main p{
 
 .foot a{
     margin: 0 2%;
+}
+
+
+@media screen and ( min-width:768px ) {
+    h1{
+        font-size: 25px;
+    }
+}
+@media screen and (min-width:600px) and (max-width:768px) {
+    h1{
+        font-size:35px
+    }    
+}
+
+@media all and (max-width:500px){
+    .navigation{
+        background-color: yellow;
+    }
+    .nav_list li a{
+        color:black;
+    }
+}
+
+@media all and (max-width:992px) and (min-width:500px){
+    .navigation{
+        background-color: lightgreen;
+    }
+    .nav_list li a{
+        color:black;
+    }
+}
+
+@media all and (max-width:1200px) and (min-width:992px){
+    .navigation{
+        background-color: red;
+    }
+    .nav_list li a{
+        color:white;
+    }
+    
+     .main_text  {
+        display: inline;
+        width: 40%;
+    }
+    h1{
+        display: inline;
+        width: 20%;
+        
+    }
+}
+
+
+
+@media all and (min-width:1200px) {
+    .navigation{
+        background-color: black;
+    }
+    .nav_list li a{
+        color:white;
+    }
+
+
 }
