@@ -1,0 +1,57 @@
+.left div{
+    background-color: red;
+    height: 8vw;
+    width: 8vw;
+    margin:0.5vw;
+}
+
+
+
+.mid div{
+    background-color: red;
+    height: 8vw;
+    width: 8vw;
+    margin:2vw;
+}
+
+
+
+.right div{
+    background-color: red;
+    height: 8vw;
+    width: 8vw;
+    margin:0.5vw;
+}
+
+
+body{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.mid{
+    display: flex;
+    
+    align-content: space-between;
+}
+
+
+.right{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.mid_1, .mid_2, .mid_3, .mid_4{
+    position: relative;
+    top: 12vw;
+}

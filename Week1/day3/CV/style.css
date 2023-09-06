@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    position: relative;
+    top:50px;
+    left: 300px;
+    
+    
+}
+.head_cv{
+    /* width: 100%; */
+    height: 250px;
+    border-bottom: 2px solid rgb(227, 225, 225);
+
+    
+    background-color: rgb(165, 161, 161);
+    color: black;
+    /* width: 90%; */
+    display: flex;
+    justify-content: space-between;
+    
+    
+    }
+
+    .name{
+        width: 30%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 35px;
+        padding-top: 75px;
+        padding-left: 35px;
+         text-decoration: solid orange underline;
+    }
+
+
+    .photo{
+        
+        padding-right:  20px;
+        padding-top: 30px;
+    }
+    .photo img{
+        justify-content: flex-end;
+        height: 200px;
+        width: 200px;
+    }
+
+
+    .foot_cv{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .left_side{
+        width: 30%;
+        height: 500px;
+        /* border-top: 2px solid rgb(227, 225, 225); */
+        border-right: 10px solid rgb(227, 225, 225);
+        background-color: rgb(165, 161, 161);
+        color: black;
+        border-top:2px ;
+        display: flex;
+        flex-direction: column;
+        
+        align-content: space-evenly;
+    }
+
+    .contact    {
+        /* width: 30%; */
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-content: space-evenly;
+    }
+    .contact h2{
+        font-size: 25px;
+        padding: 20px 0 0 20px;
+        text-decoration: underline solid orange;
+    }
+
+    .contact p{
+        padding: 5px 0 5px 25px ;
+        
+    }
+    .education{
+        /* width: 30%; */
+        height: 200px;
+    }
+    .education h2{
+        font-size: 25px;
+        padding: 20px 0 0 20px;
+        text-decoration: underline solid orange;
+    }
+    .education p{
+        padding: 10px 0 5px 25px ;
+    }
+
+
+
+
+    .right_side{
+        width: 70%;
+        height: 500px;
+        border-left: 5px solid rgb(227, 225, 225);
+        background-color: rgb(165, 161, 161);
+        color: black;
+        
+        display: flex;
+        flex-direction: column;
+        align-content: space-evenly;
+    }
+
+    .profile    {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-content: space-evenly;
+    }
+    .profile h2{
+        font-size: 25px;
+        padding: 20px 0 0 20px;
+        text-decoration: underline solid orange;
+    }
+
+    .profile p{
+        padding: 5px 0 5px 25px ;
+        
+    }
+    .experience{
+        /* width: 30%; */
+        height: 200px;
+    }
+    .experience h2{
+        font-size: 25px;
+        padding: 20px 0 0 20px;
+        text-decoration: underline solid orange;
+    }
+    .experience p{
+        padding: 10px 0 5px 25px ;
+    }
+
+.mail{
+    height: 50px;
+    width: 50px;
+}
+@media screen {
+    
+}
+    
+
+
+
+
+  
