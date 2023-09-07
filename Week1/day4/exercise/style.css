@@ -1,0 +1,12 @@
+@media all and (max-width:600px) {
+    
+    .articles{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+     }   
+
+}   .col-4{
+    
+}
