@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    /* font-weight: 700; */
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.rounded-circle{
+    width: 100px;
+    height: 100px;
+}
+
+
+.background{
+    background-color:bisque;
+    height: 70vw;
+    width: 100%;
+    display: flex;
+    font-size: 21px;
+    /* flex-direction: column; */
+}
+
+.main_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    font-family: 'Roboto', sans-serif;
+    font: 700;
+}
+
+.main_container span{
+    width: 70%;
+    font-size: larger;
+    
+}
+
+.projectsButton{
+    width: 200px;
+    height: 50px;
+    background-color: rgb(253, 195, 23);
+    text-decoration: none;
+    border-radius: 7%;
+    border-color: rgb(253, 195, 23); ;
+    margin-top: 10%;
+    
+}
+
+.sideContent{
+    display: flex;
+    flex-direction: column;
+    align-items:stretch;
+    justify-content: center;
+    
+    
+    ;
+}
+.sideContent ul{
+    list-style-type: none
+    
+}
+
+.sidebar{
+   position: relative;
+   right: 1vw;
+}
+
+.background2{
+    background-color:aliceblue;
+    height: 70vw;
+    font-size: 19px;
+    
+    /* display: flex;    */
+}
+
+.main_container2{
+    display: flex;
+    width:inherit;
+    font-family: 700 'Roboto', sans-serif ;
+}
+
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin-top: 5%;
+    width: 100vw;
+    
+}
+.aboutMe span {
+    width: 70%;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin: 5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 700;
+
+}
+.info span{
+    padding: 15px 0 0 5px;
+    
+}
+.info h3{
+    display: flex;
+    justify-content: center;
+}
+.info form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 40%;
+    margin: 5em;
+}
+.skills h3{
+    display: flex;
+   /* align-items: center; */
+   justify-content: center;
+   padding-right: 10%;
+}
+
+.skillBox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.skill{
+    padding: 3%;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    background: rgb(253, 195, 23);
+    border-radius: 5px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 50px;
+   
+}
+.info_skills{
+    display: flex;
+}
