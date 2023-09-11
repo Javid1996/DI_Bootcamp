@@ -15,7 +15,7 @@ console.log("I watched" + myWatchedSeriesLength + "series :" + myWatchedSeriesSe
 
 //Part2
 //Change the series “the big bang theory” to “friends”. Hint : You will need to use the index of “the big bang theory” series.
-myWatchedSeries.splice(2,1,"the big bang theory");
+myWatchedSeries.splice(2,1,"friends");
 
 //Add, at the end of the array, the name of another series you watched.
 myWatchedSeries.push("breaking bad");
