@@ -147,12 +147,21 @@ main{
     height: 50px;
     width: 50px;
 }
-@media screen {
-    
+@media all and (max-width:700px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        /* position:absolute; */
+        /* align-items: center;
+        justify-content: center; */
+        width: auto;
+        height: auto;
 }
-    
+     h2{
+    font-size: 15px;
+    padding: 10px 0 0 10px;
+    text-decoration: underline solid orange;    
+    }
 
-
-
-
-  
+}
