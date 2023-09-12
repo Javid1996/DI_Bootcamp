@@ -29,6 +29,7 @@ myWatchedSeries.splice(1,1);
 //Console.log the third letter of the series “money heist”.
 let thirdLetter=myWatchedSeries[2];
 console.log(thirdLetter);
+// ! money heist i sectikden sonra string metodlarindan istifade ederek 3 cu herfi gotur meselen charAt() metodu 
 
 //Finally, console.log the myWatchedSeries array, to see all the modifications you’ve made.
 console.log(myWatchedSeries);
@@ -43,6 +44,8 @@ let tf = tc;
 tf*=9;
 tf/=5;
 tf+=32;
+
+// ! 1 setrde yazmaq daha uygun
 console.log(tc+"°C is "+ tf + "°F");
 
 

@@ -22,6 +22,7 @@ let mar=str1.slice(0,3);
 let ko = str1.slice(2);
 let po = str2.slice(0,2);
 let lo = str2.slice(2);
+// ! slice etdikden sonra herflerin yerini bdeyisdirmeyi isteyir
 
 
 
@@ -56,6 +57,7 @@ console.log(+num1);
 console.log(typeof(+num1));
 let num2=prompt("please add a second number");
 let sum = +num1 + +num2;
+//! number() metodundan istifade daha uygun
 alert(`Do you want to sum ${+num1} and ${+num2}?`);
 alert(`The sum of ${+num1} and ${+num2} is ${+sum}`)
 
