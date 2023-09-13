@@ -87,6 +87,11 @@ let userVerb= prompt("Please add a verb");
 let ingCheck=userVerb.length-3;
 let sub= userVerb.substring(ingCheck);
 
+// !!! taskda sozun sonu ing ile bitdiyini yoxlamagini isleyir
+// !!! substring() sozun ortasinda ing gelse bele true verecek
+// !!! indexi nexere alaraq kombinasiya edib istifade ede bilersen substring() metodunu
+// !!! ve ya stringEndWith() metodundan istifade et
+
 if(userVerb.length>=3 && sub !=='ing'){
     console.log(userVerb+"ing");
 } else if(userVerb.length>=3 && sub ==='ing'){

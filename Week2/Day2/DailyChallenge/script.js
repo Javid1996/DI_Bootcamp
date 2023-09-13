@@ -22,11 +22,16 @@ let wordBad = sentence.indexOf("bad");
 console.log(wordNot);
 console.log(wordBad);
 
+// !!! + yazmaga ehtiyac yoxdur indexof number return edir
 if(+wordNot<+wordBad){
+
     sentence = "It's GOOD to start learning something new";
+    
     console.log(sentence);
 } else{
     sentence = "It's not bad to start learning something new";
     console.log(sentence);
 }
+//!!! tapsiriqda hemin stringi modifikasiya etmeyini isteyir
+//!!! not bad stringlerini silib good yazmalisan replace() splice() ve s.
 
