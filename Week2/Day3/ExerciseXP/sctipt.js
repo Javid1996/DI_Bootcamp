@@ -70,7 +70,8 @@ for (let i = 0; i <=people.length; i++) {
         break;
       }
   }
-
+// !!! sirf elementin ozunu muqayise etsen indexler evezine daha correct netice alarsan
+// !!! meselen people[i]=='devon
 
 
 
@@ -174,6 +175,13 @@ if( sarahRent + davidRent > danRent ){
 console.log(building.numberOfRoomsAndRent.dan[1]);
 
 
+// !!! correct way example
+// if (sarah < dan ){
+//   building.numberOfRoomsAndRent.dan[1]= 1200
+//   console.log(building);
+// }
+
+// !!!
 
 
 
@@ -260,11 +268,13 @@ let names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"];
     str=str[0];
     newArr.push(str);
     console.log(str);
-    
+
    
     }
     
-    console.log(newArr);
+   
+     console.log(newArr);
+    //  !!! to string veya join istifade edib string et son neticeni
 
 
 
