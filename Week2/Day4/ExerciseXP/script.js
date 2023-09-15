@@ -220,6 +220,7 @@ console.log(changeEnough(6.25, [5,10,12,0]));
 // }
 // console.log(hotelCost());
 
+// !!! stringleri muqayise eden zaman Lowercase() den istifade case sencitive konfliklerinin qarsisini alir
 
 // function planeRideCost(){
 //     let userDestination=""
@@ -252,3 +253,4 @@ console.log(changeEnough(6.25, [5,10,12,0]));
 // function rentalCarCost(){
 
 // }
+// !!! DERSDE ARDINI TAMAMLA
