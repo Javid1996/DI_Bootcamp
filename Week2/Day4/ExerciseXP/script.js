@@ -63,29 +63,29 @@ infoAboutPerson("Josh", 12, "yellow")
 // Call the calculateTip() function.
 
 
-function calculateTip(){
+// function calculateTip(){
     
-    let bill=prompt("Please add amount of the bill");
-    let tip;
-    let newNumber=Number(bill);
-    parseInt(newNumber);
-    if(!isNaN(newNumber)){
-        if(newNumber<50){
-            tip=newNumber*0.2;
-            console.log(`Tip: ${tip} ; Final bill: ${tip+newNumber}`)
-        }else if(newNumber>=50 && newNumber<=200){
-            tip=newNumber*0.15;
-            console.log(`Tip: ${tip} ; Final bill: ${tip+newNumber}`)
-        }else if(newNumber>200){
-            tip=newNumber*0.1;
-            console.log(`Tip: ${tip} ; Final bill: ${tip+newNumber}`)
-        }
-    }else{
-        console.log("you add not a number")
-    }
-}
+//     let bill=prompt("Please add amount of the bill");
+//     let tip;
+//     let newNumber=Number(bill);
+//     parseInt(newNumber);
+//     if(!isNaN(newNumber)){
+//         if(newNumber<50){
+//             tip=newNumber*0.2;
+//             console.log(`Tip: ${tip} ; Final bill: ${tip+newNumber}`)
+//         }else if(newNumber>=50 && newNumber<=200){
+//             tip=newNumber*0.15;
+//             console.log(`Tip: ${tip} ; Final bill: ${tip+newNumber}`)
+//         }else if(newNumber>200){
+//             tip=newNumber*0.1;
+//             console.log(`Tip: ${tip} ; Final bill: ${tip+newNumber}`)
+//         }
+//     }else{
+//         console.log("you add not a number")
+//     }
+// }
 
-calculateTip();
+// calculateTip();
 
 
 
@@ -207,38 +207,61 @@ console.log(changeEnough(6.25, [5,10,12,0]));
 //  Exercise 6 : Vacations Costs
 
 
-// function hotelCost(){
-//    let days = prompt("how many nights you would like to stay in a hotel?");   
-//    let numDays=Number(days); 
-//    let totalAmount=0;
-//    if(!isNaN(days)){
-//     totalAmount= numDays*140;
-//     return totalAmount;
-//    }else{
-//     days=prompt("how many nights you would like to stay in a hotel???")
-//    }
-// }
+function hotelCost(){
+   let days = prompt("how many nights you would like to stay in a hotel?");   
+   let numDays=Number(days); 
+   let totalAmount=0;
+   if(!isNaN(days)){
+    totalAmount= numDays*140;
+    return totalAmount;
+   }else{
+    days=prompt("how many nights you would like to stay in a hotel???")
+   }
+}
 // console.log(hotelCost());
 
 
-// function planeRideCost(){
-//     let userDestination=""
-//      userDestination = prompt("Please add your destination?");
 
-//     if(userDestination===String){
-//         if(userDestination=="London"){
-//             return "London:"+" "+ 183 +'$' 
-//         }else if(userDestination=="Paris"){
-//             return "Paris:"+" "+ 220 +'$'
-//         }else{
-//             return "All other destination :" + " " + 300 +'$' 
-//         }
-//     }else{
-//         // while(userDestination!==String){
-//         //     let userDestination = prompt("Please add your destination??");
-//         }
-//     }
-// }
+
+// Define a function called planeRideCost().
+// It should ask the user for their destination.
+// If the user doesn’t answer or if the answer is not a string, ask again.
+// The function should return a different price depending on the location.
+// “London”: 183$
+// “Paris” : 220$
+// All other destination : 300$ 
+
+function planeRideCost(){ 
+    
+    
+    do{
+        let userDestination = prompt("Please add your destination?");
+        if(userDestination){
+            const regex = /\d/;
+            let doesItHaveNumber = regex.test(userDestination);
+            if(doesItHaveNumber){
+            prompt("Please remove numbers and add your destination")
+            }else{
+                if(doesItHaveNumber=="London"){
+                    return "London:"+" "+ 183 +'$' 
+                }else if(doesItHaveNumber=="Paris"){
+                    return "Paris:"+" "+ 220 +'$'
+                }else{
+                    return "All other destination :" + " " + 300 +'$' 
+                }
+            }
+        }
+    } while(!doesItHaveNumber);
+    
+    // }else 
+    //         {while(!doesItHaveNumber){
+    //         doesItHaveNumber = prompt("Please add your destination??");
+    //         }
+    // }
+
+}
+    
+   
 // console.log(planeRideCost());
 
 
@@ -249,6 +272,44 @@ console.log(changeEnough(6.25, [5,10,12,0]));
 // If the user rents a car for more than 10 days, they get a 5% discount.
 // The function should return the total price of the car rental. 
 
-// function rentalCarCost(){
+function rentalCarCost(){
+ 
+ do{
+    let ask= prompt(" How many days ")
+    let numberAsk= Number(ask);
+    var carRent=40;
+    //  (carRent=40*numberAsk );
+    if(numberAsk>10){
+        return carRent*numberAsk*0.95
+    }else{
+        return carRent*numberAsk
+    }
+ }while(isNaN(numberAsk) )
 
-// }
+}
+
+// console.log(rentalCarCost());
+
+
+
+
+// Define a function called totalVacationCost() 
+// that returns the total cost of the user’s vacation by calling the 3 functions that you created above.
+// Example : The car cost: $x, the hotel cost: $y, the plane tickets cost: $z. 
+// Hint: You have to call the functions hotelCost(), 
+// planeRideCost() and rentalCarCost() inside the function totalVacationCost().
+
+
+function totalVacationCost() {
+
+   let y = hotelCost();
+   let z = planeRideCost();
+   let x = rentalCarCost();
+
+    console.log(`The car cost: ${x}, the hotel cost: ${y}, the plane tickets cost: ${z}.`)
+}
+
+
+
+
+totalVacationCost() ;
