@@ -34,6 +34,9 @@ const allBooks = [
 //     let li = document.createElement('li');
 //     let p = document.createTextNode(item.author);
 //     let p1 = document.createElement("img");
+
+// !!!
+// !!! img create etdikden sonra src atributunu da yaradib icerisine elave etmelisen 
   
 //     let p2 = document.createTextNode(item.alreadyRead);
 //     li.appendChild(p);
@@ -67,6 +70,7 @@ const allBooks = [
         ulList.appendChild(list3);
         ulList.appendChild(list4);
     
+        // !!! binlari for loop icerisinde yazdiqda item in sayina uygun create et elave copy paste etmeye ehtiyac yoxdur
     }
 
 
