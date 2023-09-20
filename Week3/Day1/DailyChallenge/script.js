@@ -11,15 +11,19 @@
 // Should you still use an array for the planets ? Or an array of objects ?
 
 let planets = ["Planet1","Planet2","Planet3","Planet4","Planet5","Planet6","Planet7","Planet8","Planet9"]
+let sectionPart = document.querySelector(".listPlanets");
 
 
-for(let i in planets){
+for(let i of planets){
+
     let planet = document.createElement('div');
-    // planet.className = "planet"
-    planet.classList.add="planet";
-    let sectionPart = document.querySelector(".listPlanets");
+    planet.className = `planet ${i.toLowerCase()}`
+    console.log(i);
+
+
     sectionPart.appendChild(planet);
 }
+
 
 
 
