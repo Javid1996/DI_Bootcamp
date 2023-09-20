@@ -53,8 +53,11 @@ const allBooks = [
         let p3 = document.createTextNode(item.alreadyRead);
         let p4 = document.createTextNode(item.image);
 
-        // let img1 = document.createElement('img').src="https://m.media-amazon.com/images/I/91gJgXvn+jL._AC_UF1000,1000_QL80_.jpg";
-        // img1.setAttribute(src,item.image)
+        let img1 = document.createElement('img');
+        img1.setAttribute('src',item.image);
+        ulList.appendChild(img1)
+        // img.src="https://m.media-amazon.com/images/I/91gJgXvn+jL._AC_UF1000,1000_QL80_.jpg";
+        
         
         let list1=document.createElement('li');
         let list2=document.createElement('li');
