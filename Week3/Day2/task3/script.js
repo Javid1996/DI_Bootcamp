@@ -1,6 +1,9 @@
 // Declare a global variable named allBoldItems.
 
-let allBoldItems=getBoldItems();
+// let allBoldItems=getBoldItems();
+
+const allBoldItems =[]
+
 // allBoldItems=getBoldItems() ;  
 
 console.log(allBoldItems);
@@ -14,6 +17,9 @@ function getBoldItems(){
 
    let StrongList=document.getElementsByTagName('strong');
     allBoldItems = StrongList;
+    
+    // !!! functionun icerisindeki deyeri goturmek ucun hemin deyeri return etmek lazimdir
+    // !!! ve ya bos array yaradib hemin itemleri o arrayin icerisine pushlamaq
      
 }
 // Create a function called highlight() 
@@ -44,3 +50,5 @@ function returnItemsToDefault(item){
 let p1 = document.getElementsByTagName('p')[0];
 p1.addEventListener('mouseover', highlight)
 p1.addEventListener('mouseout', returnItemsToDefault)
+
+// !!! duzelis lazimdir
