@@ -1,9 +1,6 @@
 // Declare a global variable named allBoldItems.
 
-// let allBoldItems=getBoldItems();
-
-const allBoldItems =[]
-
+let allBoldItems=[];
 // allBoldItems=getBoldItems() ;  
 
 console.log(allBoldItems);
@@ -12,33 +9,36 @@ console.log(allBoldItems);
 // This function should collect all the bold items 
 // inside the paragraph and assign them to the allBoldItems variable.
 
-
+getBoldItems();
 function getBoldItems(){
 
    let StrongList=document.getElementsByTagName('strong');
-    allBoldItems = StrongList;
-    
-    // !!! functionun icerisindeki deyeri goturmek ucun hemin deyeri return etmek lazimdir
-    // !!! ve ya bos array yaradib hemin itemleri o arrayin icerisine pushlamaq
-     
+    // allBoldItems = StrongList;
+     console.log(StrongList);
+
+     for(let i of StrongList){
+        allBoldItems.push(i);
+
+        // StrongList[i].push()
+     }
 }
 // Create a function called highlight() 
 // that changes the color of all the bold text to blue.
-function highlight(item){
+function highlight(){
 
-   getBoldItems() ;  
-    for(let item in allBoldItems){
+//    getBoldItems() ;  
+    for(let item of allBoldItems){
         item.style.color = "red"
     }
 }
 
 // Create a function called returnItemsToDefault()
 //  that changes the color of all the bold text back to black.
-function returnItemsToDefault(item){
+function returnItemsToDefault(){
       
-    getBoldItems() ;  
+    // getBoldItems() ;  
 
-    for(let item in allBoldItems){
+    for(let item of allBoldItems){
         item.style.color = "black"
     }
 }
@@ -48,6 +48,7 @@ function returnItemsToDefault(item){
 //  (ie. when the mouse pointer is moved out of the paragraph).
 
 let p1 = document.getElementsByTagName('p')[0];
+console.log(p1);
 p1.addEventListener('mouseover', highlight)
 p1.addEventListener('mouseout', returnItemsToDefault)
 
