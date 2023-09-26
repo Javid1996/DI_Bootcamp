@@ -1,53 +1,9 @@
-// Declare a global variable named allBoldItems.
+// Create a self invoking function that takes 4 arguments: number of children, partner’s name, geographic location, job title.
+// The function should display in the DOM a sentence like "You will be a <job title> in <geographic location>, 
+// and married to <partner's name> with <number of children> kids."
 
-let allBoldItems=[];
-// allBoldItems=getBoldItems() ;  
 
-console.log(allBoldItems);
-
-// Create a function called getBoldItems() that takes no parameter. 
-// This function should collect all the bold items 
-// inside the paragraph and assign them to the allBoldItems variable.
-
-getBoldItems();
-function getBoldItems(){
-
-   let StrongList=document.getElementsByTagName('strong');
-    // allBoldItems = StrongList;
-     console.log(StrongList);
-
-     for(let i of StrongList){
-        allBoldItems.push(i);
-
-        // StrongList[i].push()
-     }
-}
-// Create a function called highlight() 
-// that changes the color of all the bold text to blue.
-function highlight(){
-
-//    getBoldItems() ;  
-    for(let item of allBoldItems){
-        item.style.color = "red"
-    }
-}
-
-// Create a function called returnItemsToDefault()
-//  that changes the color of all the bold text back to black.
-function returnItemsToDefault(){
-      
-    // getBoldItems() ;  
-
-    for(let item of allBoldItems){
-        item.style.color = "black"
-    }
-}
-
-// Call the function highlight() on mouseover (ie. when the mouse pointer is moved onto the paragraph),
-//  and the function returnItemsToDefault() on mouseout 
-//  (ie. when the mouse pointer is moved out of the paragraph).
-
-let p1 = document.getElementsByTagName('p')[0];
-console.log(p1);
-p1.addEventListener('mouseover', highlight)
-p1.addEventListener('mouseout', returnItemsToDefault)
+(function (children,partnerName,location,job){
+    
+ console.log(`You will be a ${job} in ${location}, and married to ${partnerName} with ${children} kids.`)
+})("3","Ema","British Columbia","developer")

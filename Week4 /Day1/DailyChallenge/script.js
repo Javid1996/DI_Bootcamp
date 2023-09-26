@@ -35,12 +35,12 @@ const gameInfo = [
     const usernames=[];
     let container = 0;
     gameInfo.forEach((item,index) => { console.log(item,index)
-        // item.score > 5 ? usernames.push(item.username) : " ";   // 2
+        item.score > 5 ? usernames.push(item.username) : " ";   // 2
         container += item.score;
 
     });
     console.log( ` The total score is ${container}`)
-    // return usernames;
+    console.log (usernames);
 // }
 
 
