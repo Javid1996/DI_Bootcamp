@@ -27,6 +27,8 @@ console.log(currentBankAmount)
 bankAmount+= currentBankAmount
 console.log(bankAmount);
 
+
+
 function getVat(details){
    
     var total=0;

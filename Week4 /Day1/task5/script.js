@@ -21,7 +21,8 @@ const ordinal = ["th","st","nd","rd"];
 // Hint : Use the array methods taught in class and ternary operator.
 
 let originalIndex =(index)=>(
-     index>3 ? original[0]: original[index]
+     index>3 ? ordinal[0]: ordinal[index] 
+    //  !!! variable ad sehv idi , sonda console.log edib neticeye baxmayi unutmayin
 )
 
 
