@@ -19,6 +19,8 @@ console.log(converter(3));
  console.log(gr+'gr')
 })(5)
 
+// !!! function expression-- function name (){return 'something'}
+// !!! function declaration-- let name = function(){return 'something'}
 
 const ArrowConverter = (kg) =>{let gr= kg*1000; return gr+'gr' }
 console.log(ArrowConverter(8))

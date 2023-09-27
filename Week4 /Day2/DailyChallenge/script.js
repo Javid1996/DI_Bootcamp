@@ -30,14 +30,24 @@ displayGroceries(groceries.fruits)
 // Change the client variable to “Betty”. Will we also see this modification in the user variable ? Why ?
 
 let cloneGroceries = () => {
-    let user = client;
-    console.log(user);
-    let shopping = groceries;
-    console.log(shopping);
+  let user = client;
+  console.log(user);
+  let shopping = groceries;
+  // !!! groceries variable-in value-su array oldugu ucun object reference olunur.
+  // !!! bu zaman shopping array-in value-su hemin deyerin ramda yerlesdiyi yer yazilir
+  // !!! her iki variable eyni obyekti gosterir
+  // !!! shopping uzerinde edilen deyisiklikler eyni 1  ortaq deyer oldugu ucun her iki variable gosterecek
+
+  shopping.totalPrice = '35$';
+  shopping.other.paid = false;
+  console.log(shopping);
+  console.log(groceries);
+  // !!!
+ 
 }
 
-groceries.totalPrice ='35$';
-groceries.other.paid =false;
+// groceries.totalPrice ='35$';
+// groceries.other.paid =false;
 
 client = "Betty";
 cloneGroceries();
