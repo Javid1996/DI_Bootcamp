@@ -7,6 +7,7 @@
 
 //   Analyze this code, what will be the output ?
 //2,4,6 cause typeof method returns string
+// !!! typeof method eksine number oturduyu ucun if in icerisine girir
 
 
 [[0, 1], [2, 3]].reduce(
