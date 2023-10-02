@@ -1,0 +1,26 @@
+const getAnagram = (str1, str2) => {
+    
+    if(str1.toLowerCase().split('').sort().join('') ==
+    str2.toLowerCase().split('').sort().join('')){
+
+    console.log(`${str1} is an anagram of ${str2} `)
+
+    } else{
+        console.log(`${str1} is not an anagram of ${str2} `)
+    }
+}
+
+
+getAnagram('aaaBBb','AbAbAb')
+getAnagram('Astronomer ','Moon starer')
+getAnagram('School master','The classroom')
+getAnagram('The Morse Code','Here come dots')
+getAnagram('str1','str2')
+
+
+
+
+
+// "Astronomer" is an anagram of "Moon starer"
+// "School master" is an anagram of "The classroom"
+// "The Morse Code" is an anagram of "Here come dots"
