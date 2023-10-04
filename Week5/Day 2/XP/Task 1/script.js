@@ -11,7 +11,7 @@ xhr.onload = function() {
       console.log(`Error ${xhr.status}: ${xhr.statusText}`);
     } else { 
      
-      console.log(xhr.response);
+      console.log(xhr.response);/* data obyektine kec, esas dataya kecmek ucun */
     }
   };
 

@@ -17,7 +17,7 @@ submit.addEventListener("click",(e) => {
     // let img = document.createElement('img');
    
 
-    // img.src = response.images.original.url;
+    // img.src = response.data.images.original.url;
     // div.append(img);
 
     let innerDiv = document.createElement('div');
@@ -35,8 +35,11 @@ submit.addEventListener("click",(e) => {
 
     resetButton.addEventListener('click',(e) => {
 
-        e.target.div.remove(e.target); //e.target = innerDiv
-        // innerDiv.innerHTML= "";
+        // e.target.div.remove(e.target); //e.target = innerDiv
+        // // innerDiv.innerHTML= "";
+
+        e.target.parentElement.remove()
+        // !!! bu sekilde olmalidir 
     
     });
 
