@@ -15,7 +15,7 @@ const getAnagram = (str1, str2) => {
 }
 
 
-getAnagram('aaaBBb','AbAbAb')
+getAnagram('aaaBBb','AbAbAbbb')
 getAnagram('Astr onomer','Moonstarer')
 getAnagram('School master','The classroom')
 getAnagram('The Morse Code','Here come dots')
