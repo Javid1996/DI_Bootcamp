@@ -36,10 +36,10 @@ submit.addEventListener("click",(e) => {
     resetButton.addEventListener('click',(e) => {
 
         // e.target.div.remove(e.target); //e.target = innerDiv
-        // // innerDiv.innerHTML= "";
+        innerDiv.innerHTML= "";
 
-        e.target.parentElement.remove()
-        // !!! bu sekilde olmalidir 
+        // e.target.parentElement.remove()
+        // // !!! bu sekilde olmalidir 
     
     });
 
