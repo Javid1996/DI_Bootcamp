@@ -35,7 +35,7 @@ submit.addEventListener("click",(e) => {
 
     resetButton.addEventListener('click',(e) => {
 
-        e.target.div.remove(e.target); //e.target = innerDiv
+        e.target.parentElement.remove(); //e.target = innerDiv
         // innerDiv.innerHTML= "";
     
     });
