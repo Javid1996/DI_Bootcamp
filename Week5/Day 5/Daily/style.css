@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#container{
+    height: 100vh;
+    border: 2px green solid;
+    display: flex;
+    align-items: center    
+}
+
+#converter{
+    border: 2px black solid;
+    text-align: center;
+    margin: auto;
+    padding: 3em 7em;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
