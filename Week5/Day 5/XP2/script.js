@@ -55,7 +55,7 @@ async function getRandomPokemon(){
     pNumber=pokemonId;
     console.log('PNUMBER FUNC',pNumber);
 
-    
+    // !!! try catch elave ede bilersen
     
     
     
@@ -145,7 +145,9 @@ function getRandomNumber(min, max){
     
  }
 
-
+//  !!! left ve right functionlar eyni isi gorur ferqli argumentlerle
+// !!! 1 function yazib ferqli parametrle call etmek daha uygun
+// !!! elave olraq sirf html domla islemek ucun ayrica bir function olsa tekrarlarin qarsisini alir
 
 
 //     const data = jsonResponse.results;
