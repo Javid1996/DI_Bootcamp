@@ -28,3 +28,4 @@ SELECT first_name,last_name FROM customers ORDER BY first_name ASC;
 
 SELECT last_name FROM customers ORDER BY last_name DESC;
 
+-- !!! PART 2 TAMAMLANMAYIB
