@@ -1,0 +1,35 @@
+in the HTML file, create a form to add a new task. The form should contain a few inputs:
+
+Name
+Description
+Start date and time - check the documentation
+End date and time - check the documentation
+A submit button
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <div id="page">
+            <form action="" method="GET" id="task_form">
+                <input type="text" id="name" placeholder="Name of Action" class="form_input">
+                <input type="text" id="description" placeholder="Description of the task" class="form_input">
+
+                <input type="datetime-local"  id="start-time" class="form_input" name="start-time"  min="2023-10-13T00:00" max="2023-12-31T00:00" />
+
+                <input type="datetime-local" id="end-time" class="form_input" name="end-time" min="2023-10-13T00:00" max="2023-12-31T00:00" />
+                <button id="btn">submit</button>
+            </form>
+        </div>
+    </div>
+<script src="./script.js"></script>
+</body>
+</html>
