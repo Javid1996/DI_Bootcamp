@@ -73,6 +73,13 @@ SELECT first_name,last_name, LENGTH(CONCAT(first_name,' ',last_name)) AS fullnam
 -- of the employees table contains any numbers.
 SELECT * FROM employees WHERE first_name LIKE '%[0-9]%'
 
+-- !!! option  2
+    select * from employees where first_name ~ '\d';
+-- ~ for regex
+-- \ escape operator
+-- d regex for number
+ --   !!!
+
 UPDATE employees 
 SET first_name = 'Javid1', 
 	last_name = 'Aliyev';

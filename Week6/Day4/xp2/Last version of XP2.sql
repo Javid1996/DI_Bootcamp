@@ -55,6 +55,10 @@ ON jobs.job_id = employees.job_id
 WHERE jobs.job_title<>'Programmer' OR jobs.job_title<>'Shipping Clerk'
 AND salary NOT IN (4500,10000,15000)
 
+-- !!
+--  <> muqayise ucun
+-- = menimsetme beraberlik ucun
+-- !!
 
 --  5   Write a query to display the last names of all employees
 -- whose last name contains exactly six characters.
