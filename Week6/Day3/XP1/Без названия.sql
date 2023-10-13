@@ -160,7 +160,7 @@ ORDER BY rental_rate  DESC LIMIT 30;
 select film.title
 from (actor join film_actor on actor.actor_id = film_actor.actor_id)
 join film on film.film_id = film_actor.film_id
-where film.description like '%Sumo%' 
+where film.description ilike '%Sumo%' 
 and actor.first_name = 'Penelope' 
 and actor.last_name = 'Monroe'
 
@@ -174,11 +174,12 @@ AND rating = 'R';
 -- 3.
 SELECT film.title 
 FROM film
-ON film.film_id = inventory.film_id
-JOIN rental
-ON rental.inventory_id = inventory.inventory_id
-JOIN customer
-ON rental.customer_id = customer.customer_id
+INNER JOIN (inventory
+ON film.film_id = inventory.film_id)
+INNER JOIN (rental
+ON rental.inventory_id = inventory.inventory_id)
+INNER JOIN (customer
+ON rental.customer_id = customer.customer_id)
 WHERE first_name = 'Matthew'
 AND last_name = 'Mahan'
 AND rental_rate > 4
@@ -187,11 +188,11 @@ AND rental.return_date BETWEEN '28/07/2005' AND '01/08/2005'
 -- 4.
 SELECT film.title, film.description, film.replacement_cost
 FROM film
-JOIN inventory
+INNER JOIN inventory
 ON film.film_id = inventory.film_id
-JOIN rental
+INNER JOIN rental
 ON rental.inventory_id = inventory.inventory_id
-JOIN customer
+INNER JOIN customer
 ON rental.customer_id = customer.customer_id
 where customer.first_name = 'Matthew'
 and customer.last_name = 'Mahan'
