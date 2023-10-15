@@ -1,0 +1,62 @@
+
+ul div.task{
+    cursor: pointer;
+    height: 70px;
+    width: 700px;
+    font-size: larger;
+    display: inline-block;
+    
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: center; */
+/* border-radius: 20px; */
+border: 1px black solid;
+}
+
+
+.descrip{
+    border: 2px black solid;
+    height: 5rem;
+    width: 5rem;
+}
+
+p{
+    visibility: hidden;
+}
+
+
+.task{
+    /* display: inline-block; */
+    background-color: red;
+
+}
+.check{
+    size: 10px;
+    margin-left: 20px;
+}
+.reset_btn{
+    margin-left: 20px;
+}
+
+.isChecked{
+background-color: green;
+}
+
+.timeIsOver{
+   background-color: yellow;
+}
+
+.descriptionDiv{
+    visibility: hidden;
+    border: 1px black solid;
+    /* display: inline-block; */
+
+}
+
+
+.x_button{
+    visibility: visible;
+    background-color: tomato;
+    border: 1px black solid;
+    /* visibility: hidden; */
+}
