@@ -27,3 +27,5 @@ const writeBye = fs.writeFile('Bye World.txt', 'Bye World!', function (err,) {
     }
 });
 module.exports = {read,writeHello,writeBye};
+
+// !!! func seklinde olub her biri parametrleri ni import olduqlari yerden qebul etmelidi

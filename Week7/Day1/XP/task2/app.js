@@ -3,7 +3,8 @@
 let sum = 0;
 
 people.forEach(element => {
-    sum +=element.age;     
+    sum +=element.age;  
+  
 });
 
 let avr =sum/3;
