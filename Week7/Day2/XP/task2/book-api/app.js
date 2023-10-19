@@ -38,14 +38,18 @@ app.get("/api/books/:bookID", (req, res) => {
   
 
 app.use(express.json());
+// !!! bodyparser de elave et
+
 app.post("/api/books", (req, res) => {
-    const newBook = {
-      id: books.length + 1,
-      title: req.body.title,  //"Book4",
-      author: req.body.author, //"a4",
-      publishedYear : req.body.publishedYear //"y4"
-    };
-    books.push(newBook);
-    // res.status(201).json(newBook));
-     res.status(201).json(newBook);
-  });
+  const newBook = {
+    id: books.length + 1,
+    title: req.body.title, //"Book4",
+    author: req.body.author, //"a4",
+    publishedYear: req.body.publishedYear, //"y4"
+  };
+
+  // !!! body olmazsa deye if statement de ver
+  books.push(newBook);
+  // res.status(201).json(newBook));
+  res.status(201).json(newBook);
+});

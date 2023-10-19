@@ -13,49 +13,65 @@ app.listen(3000, () => {
 
 // 1
   app.get("/posts:", (req, res) => {
+    /* : path de bu olmamali /posts*/
     res.json(array);
   });
 
 //?????? 2
-  // app.get("/posts/:id:",(req,res)=>{
-  //   const id = Number(req.params.id);
-  //   const thesis = array.find((thesis)=>
-  //      thesis.id===id
-  //   );
-  //   res.json(thesis);
-  // });
+  app.get("/posts/:id:",(req,res)=>{
+    const id = Number(req.params.id);
+    const thesis = array.find((thesis)=>
+       thesis.id===id  /* type problemine gore iki beraberlik == */
+    );
+    res.json(thesis);
+  });
 
 //  3 POST /posts: Create a new blog post.
   
   app.use(express.json());
+
+  // !! boddyparser de istifade et
+
   app.post("/posts",(req,res)=>{
     const newThesis = {
       id: array.length + 1,
       title: "polusion",
       content: "thesis about polusion",
     };
+
+    // !!! body ile isle 
+    // !!! body olmazsa deye if statement de ver
     array.push(newThesis);
     res.status(201).json(newThesis);
 
   })
+
   app.get("/posts", (req, res) => {
     res.json(array);
   });
+  // !!! niye iki dene eyni pathde get var olmamali
 
 
   // PUT /posts/:id: Update an existing blog post.
   app.use(express.json());
+//  bir defe middleware parser kifayet edir
+
   app.put("/posts/:id",(req,res) =>{
     const id = Number(req.params.id);
-    const index = array.findIndex((thesis) => thesis.id === id);
+    const index = array.findIndex(
+      (thesis) => thesis.id === id
+    ); /* 2 beraberlik islet type meselesine gore == */
     if (index === -1) {
-      return res.status(404).send("Thesis not found");
+      return res.status(404).send('Thesis not found');
     }
     const newThesisByPut = {
       id: array[index].id,
-      title: "req.body.title",
-      content: "req.body.content",
+      title: 'req.body.title',
+      content: 'req.body.content',
     };
+
+    // !!! body ile isle
+    // !!! body olmazsa deye if statement de ver
     array[3] = newThesisByPut;
-    res.status(200).json("Product updated")
+    res.status(200).json('Product updated');
   }   );
