@@ -19,6 +19,7 @@ router.post('/todos', (req, res) => {
       id: todos.length + 1,
       item: req.body.item
     };
+    // !!! body bos ola biler deye if statement ver
     todos.push(newTodo);
     // res.status(201).json(newBook));
      res.status(201).json(newTodo);
@@ -26,6 +27,7 @@ router.post('/todos', (req, res) => {
 
 
   router.use(express.json());
+  // !!! app js serverde elave etmek daha uygun butun routelara kecerli olur
 
   router.put("/id",(req,res) =>{
     const id = Number(req.params.id);
@@ -54,3 +56,5 @@ router.post('/todos', (req, res) => {
   });
 
 module.exports = router
+
+// !!!EXERCISE 3 TAMAMLANMAYIB
