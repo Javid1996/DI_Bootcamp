@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 
-const data = require('./data/dataService');
+// const data = require('./data/dataService');
 const { default: axios } = require('axios');
 
 app.listen(3010, () => {
