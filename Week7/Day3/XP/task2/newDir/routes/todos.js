@@ -10,16 +10,18 @@ const todos = [
 
 
 
-router.get('/todos', (req,res)=>{
+router.get('/', (req,res)=>{
     res.json(todos)
 })
 
-router.post('/todos', (req, res) => {
+router.post('/', (req, res) => {
     const newTodo = {
       id: todos.length + 1,
       item: req.body.item
     };
-    // !!! body bos ola biler deye if statement ver
+    if(!req.body){
+      return res.status(404).send('item is apsent');
+    }
     todos.push(newTodo);
     // res.status(201).json(newBook));
      res.status(201).json(newTodo);
@@ -29,9 +31,9 @@ router.post('/todos', (req, res) => {
   router.use(express.json());
   // !!! app js serverde elave etmek daha uygun butun routelara kecerli olur
 
-  router.put("/id",(req,res) =>{
+  router.put("/:id",(req,res) =>{
     const id = Number(req.params.id);
-    const index = todos.findIndex((el) => el.id === id);
+    const index = todos.findIndex((el) => el.id == id);
     if (index === -1) {
       return res.status(404).send("Thesis not found");
     }
@@ -45,9 +47,9 @@ router.post('/todos', (req, res) => {
   }   );
 
 
-  router.delete('/id', (req,res)=>{
+  router.delete('/:id', (req,res)=>{
     const id = Number(req.params.id);
-    const index = todos.findIndex((el) => el.id=id);
+    const index = todos.findIndex((el) => el.id==id);
     if (index === -1) {
         return res.status(404).send("Thesis not found");
     }

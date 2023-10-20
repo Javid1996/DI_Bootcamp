@@ -3,8 +3,8 @@ const app = express();
 
 const route = require("./routes/todos.js")
 
-app.listen(2500, () => {
-    console.log('server is running on port 2500')
+app.listen(3000, () => {
+    console.log('server is running on port 3000')
 })
 
 app.use(express.json())

@@ -1,8 +1,8 @@
 const express = require('express')
 const app = express()
 
-const data = require('./data/dataService');
-const { default: axios } = require('axios');/* burda ehtiyac yoxdur */
+// const data = require('./data/dataService');
+const { default: axios } = require('axios');
 
 app.listen(3010, () => {
     console.log('server is listening on port 3010')
