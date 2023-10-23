@@ -30,7 +30,8 @@ const getAllBooks = (req, res) => {
 
 const getBookById = (req, res) => {
     
-    const id =Number(req.params.id);
+    const id =Number(req.params.bookId);
+    console.log(req.params);
     db
     .select().from('books')
     .where('id', id)
