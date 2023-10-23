@@ -7,6 +7,7 @@ const someData = fs.copyFile('source.txt', 'destination.txt', function (err) {
     }
 });
 
+// !!! elave olaraq read file etdikden sonra writefile da islede bilersen
 
 // const toDestination = fs.writeFile('destination.txt', 'someData', function (err) { 
 //     if (err){ 

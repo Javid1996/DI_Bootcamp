@@ -64,7 +64,7 @@ console.log(req.body.password);
         .select()
         .where({username:user})
         .then(post =>{
-            if(post.length>0){
+            if(post.length>0){ /* eger post varsa deye sert vermek daha uygun */
                 if(bcrypt.compareSync(pass,post[0].password)) {
                    console.log(`Welcome ${post[0].username}`)
                     res.send(`Welcome ${post[0].username}`)
