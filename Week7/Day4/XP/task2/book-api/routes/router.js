@@ -8,8 +8,8 @@ const {
     postBookById
 } = require('./controller')
 
-router.get('/',getAllBooks())
-router.get('/:bookId',getBookById())
-router.post('/',postBookById())
+router.get('/',getAllBooks)
+router.get('/:bookId',getBookById)
+router.post('/',postBookById)
 
 module.exports = router
