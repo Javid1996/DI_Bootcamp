@@ -1,5 +1,7 @@
 class todoList {
-    constructor(){}
+    constructor(){
+        const tasks=[]
+    }
     method1()
     method2()
     method3()

@@ -1,4 +1,4 @@
-const chalk = require("chalk");
-const app = require('./colorful-message')
-
-app();
+// const chalk = require("chalk");
+// const  = require('./colorful-message')
+import getBlueConsole from "./colorful-message.js";
+getBlueConsole();
