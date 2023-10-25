@@ -8,7 +8,12 @@ import logo from './logo.svg';
 //         return <h2>Hi, I am a Car!</h2>;
 //     }
 // }
-
+const style_header = {
+    color: "white",
+    backgroundColor: "DodgerBlue",
+    padding: "10px",
+    fontFamily: "Arial"
+  };
 
 
 class Exercise extends React.Component{
@@ -17,26 +22,25 @@ class Exercise extends React.Component{
     //    console.log(this.props.testprops);
         return (
             // const htmlElements = (
-       <div>
-
-        <h1 className="h1" >This is a Header</h1>,
-        <p>This is Paragraph</p>,
-        <a href='#'>This is Link</a>,
-        <h2>This is a Form</h2>,
+       <>
+        <h1 className="h1" >This is a Header</h1>
+        <p>This is Paragraph</p>
+        <a href='#'>This is Link</a>
+        <h2>This is a Form</h2>
         <form>
             <label>Enter your name:</label>
             <input type='text'></input>
-            <input type='submit'>SUBMIT</input> 
-        </form>,
-        <h3>Here is an Image:</h3>,
-        <img src={logo}/>,
-            <h4>This is a List:</h4>,
+            <button type='submit' >submit</button>
+        </form>
+        <h3>Here is an Image:</h3>
+        <img src={logo} width={300}/>
+            <h4>This is a List:</h4>
             <ul>
                 <li>Coffee</li>
                 <li>Tea</li>
                 <li>Milk</li>
             </ul>
-        </div>
+        </>
         )
     // )
 
