@@ -18,6 +18,8 @@ function App() {
           Learn React
         </a>
       </header>
+      {/* !!! yeni projecte baslayan zaman default header i de sil ehtiyac yoxdur 
+      elave olaraq ozun custom header yaza bilersen */}
     </div>
   );
 }

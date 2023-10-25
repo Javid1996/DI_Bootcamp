@@ -12,6 +12,8 @@ class todoList {
     method2(){
         const filteredTasks = tasks.map((item) => {
             if (item===false) {
+            // !!! objectle islediyin ucun parametrini qeyd etmelisen
+            // meselen task objectin{ task: 'task context', checked:false}
               return item===true;
             }console.log(tasks);
 
