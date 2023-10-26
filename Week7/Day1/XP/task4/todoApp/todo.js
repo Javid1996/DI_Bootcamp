@@ -6,10 +6,12 @@ class todoList {
         const tasks=[]
     }
     method1(){
+        const object= {taskcon :task, checked:false}
         tasks.push(this.a,this.b,this.c)
         console.log(tasks)
     }
     method2(){
+      
         const filteredTasks = tasks.map((item) => {
             if (item===false) {
             // !!! objectle islediyin ucun parametrini qeyd etmelisen
