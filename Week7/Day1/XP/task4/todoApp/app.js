@@ -1,3 +1,11 @@
 import todoList from './todo.js';
 
-const toDo = new todoList(task1,task2,task3);
+let task1 = {name:'homework',isDone :false}
+
+const toDo = new todoList();
+
+todoList.method1(task1)
+todoList.method2(task1)
+todoList.method3()
+// todoList(task3)
+// todoList(task4)
