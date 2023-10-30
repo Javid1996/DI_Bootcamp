@@ -3,26 +3,30 @@ class todoList {
         this.a=a;
         this.b=b;
         this.c=c;
-        const tasks=[]
+        const tasks=[];
     }
-    method1(){
-        const object= {taskcon :task, checked:false}
-        tasks.push(this.a,this.b,this.c)
-        console.log(tasks)
+    method1(task){
+        this.tasks.push(task)
+        console.log(this.tasks)
     }
-    method2(){
-      
-        const filteredTasks = tasks.map((item) => {
-            if (item===false) {
-            // !!! objectle islediyin ucun parametrini qeyd etmelisen
-            // meselen task objectin{ task: 'task context', checked:false}
-              return item===true;
-            }console.log(tasks);
-
-          });
+    method2(task){
+        const filteredTasks = this.tasks.map((item) => {
+            if(item.name==task.name){
+                
+                if (item.isDone===false) {
+                  return task.isDone===true;
+                }
+                // console.log(this.tasks)
+                else if(item.isDone===true){
+                    return task.isDone===false;
+                }
+    
+              }})
+            this.tasks=filteredTasks
+            
     }
     method3(){
-        tasks.forEach(task => 
+        this.tasks.forEach(task => 
             console.log(task)
         );
     }
