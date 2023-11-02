@@ -2,6 +2,8 @@ import React from 'react'
 import './App.css';
 import { BrowserRouter } from 'react-router-dom';
 import { Routes, Route, Link } from 'react-router-dom'
+import Example1 from './Components/Example1';
+import Example2 from './Components/Example2';
 
 // !! datani componentlere props kimi otur
 
@@ -21,7 +23,7 @@ function App() {
     </ul>
     <Routes>
       <Route exact path="/ex1" element={<Example1/>} />
-      {/* <Route path="/ex2" element={<Example2/>} /> */}
+      <Route path="/ex2" element={<Example2/>} />
       {/* <Route path="/ex3" element={<Example3 />} /> */}
     </Routes>
 
