@@ -42,7 +42,7 @@ const mapStateToProps = (state) =>{
 
 const mapDispatchToProps = dispatch =>{
     return{
-        increase:()=> dispatch(increasing()),
+        submit:()=> dispatch(increasing()),
         decrease:()=>dispatch(decreasing())
     }
 }
