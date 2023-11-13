@@ -37,6 +37,7 @@ function Navbar(){
         <NavLink to="/shop">Shop</NavLink>
       </li>
     </ul>
+    {/* navlinkler routerin icerisinde olmali */}
     <Routes>
       <Route path="/" element={<HomeScreen />} />
       <Route path="/profile" element={<ProfileScreen />} />
