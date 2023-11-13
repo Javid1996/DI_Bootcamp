@@ -24,8 +24,8 @@ this.state={users:[]}
   }
 handleChange(e){
   // console.log(e.target.value);
-  let searchString = e.target.value;
-  this.props.dispatch({type:'SEARCH_ROBOTS',payload:searchString})
+  // let searchString = e.target.value;
+  this.props.onInputChange(e)
 }
 
 
@@ -35,7 +35,7 @@ handleChange(e){
         {/* {JSON.stringify(this.state.users)} */}
         <div className='header'>
           <h1 className='title'> ROBOFRIENDS</h1>
-            <input type='text' className='roboSearch' placeholder='Search Robots' onChange={this.handleChange}></input>
+            <input type='text' className='roboSearch' placeholder='Search Robots' onChange={this.handleChange.bind(this)}></input>
             
         </div>
         <RobotContainer users={this.state.users}/>
@@ -48,4 +48,9 @@ handleChange(e){
   
 }
 
-export default connect()(App);
+const mapDispatchToProps=(dispatch)=>{
+  return {
+    onInputChange:(params)=>dispatch({type:'SEARCH_ROBOTS',payload:params.target.value})
+  }
+}
+export default connect(null,mapDispatchToProps)(App);
