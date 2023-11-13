@@ -1,0 +1,36 @@
+body {
+  background-image: linear-gradient(to right, rgb(6, 182, 182),#02154a);
+
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
+  flex-direction: column;
+}
+
+
+.title{
+  font-family: 'SEGA LOGO FONT', sans-serif;
+  color: #0681b1;
+ font-size: 40px ;
+ font-weight: 400;
+                                              
+}
+
+.roboSearch{
+  width: 350px;
+  height: 70px;
+  border: 1px solid yellowgreen;
+  font-size: 22px;
+  text-align: center;
+}
+
+.robot-container{
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
